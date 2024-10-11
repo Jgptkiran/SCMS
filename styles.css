@@ -1,0 +1,196 @@
+/* Basic styles for body and header */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #211f1f;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.nav-buttons .btn {
+    background-color: #555;
+    color: #fff;
+    padding: 10px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nav-buttons .btn:hover {
+    background-color: #777;
+}
+
+/* Booking Options Style */
+.booking-options {
+    text-align: center;
+    padding: 40px;
+}
+
+.options-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.option-card {
+    background-color:#823b3b;
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px; /* Increased width */
+    box-shadow: 0 4px 8px rgba(231, 24, 24, 0.1);
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.option-image {
+    width: 100%;
+    height: 180px; /* Set a fixed height for images */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.option-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.option-card p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.option-card .learn-more {
+    text-decoration: none;
+    background-color: antiquewhite;
+    color: #0073e6;
+    font-weight: bold;
+}
+
+.option-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.option-card:hover .learn-more {
+    color: #005bb5;
+}
+/* Divider Line Style */
+.section-divider {
+    width: 60%; /* Adjusts the length of the line */
+    margin: 40px auto; /* Centers the line and adds vertical spacing */
+    border: none;
+    border-top: 2px solid #777777; /* Line color and thickness */
+    opacity: 0.7; /* Slightly transparent for a subtle look */
+}
+
+/* Gallery Section Style */
+.gallery {
+    text-align: center;
+    padding: 40px;
+    position: relative;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 90%; /* Adjust width to be more responsive */
+    height: 600px; /* Set a fixed height for the gallery container */
+    margin: auto;
+    overflow: hidden; /* Ensures content doesn't overflow the container */
+}
+
+.mySlides {
+    display: none;
+    position: relative;
+    height: 100%; /* Ensures each slide takes full height of the container */
+}
+
+.gallery-image {
+    width: 100%;
+    height: 100%; /* Ensures image covers the entire slide */
+    object-fit: cover; /* Ensures the image scales properly within the container */
+    opacity: 0.8; /* Decrease the opacity slightly */
+    border-radius: 10px;
+    transition: opacity 0.3s;
+}
+
+.gallery-image:hover {
+    opacity: 1; /* Reset opacity on hover */
+}
+
+/* Signup Button Style */
+.signup-button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.signup-button {
+    display: inline-block;
+    background-color: #0073e6;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.signup-button:hover {
+    background-color: #005bb5;
+}
+
+
+/* Footer styles */
+footer {
+    background-color:rgb(60, 60, 91);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer-content .social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 50px 10px;
+    transition: color 0.3s;
+}
+
+.footer-content .social-links a:hover {
+    color: #0073e6;
+}
+
+.footer-content .opening-hours p {
+    margin: 5px 50px;
+}

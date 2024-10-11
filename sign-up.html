@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Ansole Sports Club</title>
+    <link rel="stylesheet" href="signupstyles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Ansole Sports Club</h1>
+    </header>
+    <main>
+        <section class="signup-section">
+            <h2>Sign Up</h2>
+            <form action="signup_process.php" method="post">
+                <!-- First Name Field -->
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first_name" placeholder="Enter your first name" required>
+                
+                <!-- Last Name Field -->
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last_name" placeholder="Enter your last name" required>
+                
+                <!-- Email Field -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter a valid email address" required>
+                
+                <!-- Address Field -->
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" placeholder="Enter your residential address" required>
+                
+                <!-- Password Field -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Create a strong password" required>
+                <small>Password should be strong mixed of character, numbers and letters</small>
+                
+                <!-- Phone Number Field -->
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your contact number" pattern="[0-9]{10}" title="Please enter a 10-digit phone number">
+
+                <!-- Submit Button -->
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ansole Sports Club. All rights reserved.</p>
+    </footer>
+</body>
+</html>
