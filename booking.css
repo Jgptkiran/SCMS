@@ -1,0 +1,100 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Main heading styling */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Form and navigation styling */
+form, #dateNavigation, #bookingSummary, #bookingDetails, #customerDetails {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+}
+
+/* Table header and cell styling */
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Table header background color */
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Alternate row background color */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Row hover effect */
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Cell cursor pointer */
+td {
+    cursor: pointer;
+}
+
+/* Available slot styling */
+td.available {
+    background-color: #c8e6c9;
+}
+
+/* Unavailable slot styling */
+td.unavailable {
+    background-color: #ffcdd2;
+}
+
+/* Selected slot styling */
+td.selected {
+    background-color: #ffeb3b;
+}
+
+/* Button styling */
+#continueButton, button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Disabled button styling */
+#continueButton:disabled, button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Terms and conditions section styling */
+#terms {
+    margin-top: 20px;
+}
+
+/* Terms description styling */
+#termsDescription {
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
